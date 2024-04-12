@@ -20,6 +20,7 @@ SKIP_FILTERS = [
     "radio-1.25GHz",
     "radio-3GHz",
     "radio-6GHz",
+    "radio-9.8GHz",
 ]
 
 
