@@ -189,6 +189,7 @@ def getFilteredMag(mag, filt):
         "radio-1.25GHz",
         "radio-6GHz",
         "radio-3GHz",
+        "radio-9GHz",
         "radio-9.8GHz",
         "sdss__u",
         "sdss__g",
@@ -307,6 +308,7 @@ def get_default_filts_lambdas(filters=None):
         "radio-3GHz",
         "radio-5.5GHz",
         "radio-6GHz",
+        "radio-9GHz",
         "radio-9.8GHz",
         "X-ray-1keV",
         "X-ray-5keV",
@@ -315,7 +317,7 @@ def get_default_filts_lambdas(filters=None):
         [3561.8, 4866.46, 6214.6, 7687.0, 7127.0, 7544.6, 8679.5, 9633.3, 12350.0]
     )
     lambdas_bessel = 1e-10 * np.array([3605.07, 4413.08, 5512.12, 6585.91, 8059.88])
-    lambdas_radio = scipy.constants.c / np.array([1.25e9, 3e9, 5.5e9, 6e9, 9.8e9])
+    lambdas_radio = scipy.constants.c / np.array([1.25e9, 3e9, 5.5e9, 6e9, 9e9, 9.8e9])
     lambdas_Xray = scipy.constants.c / (
         np.array([1e3, 5e3]) * scipy.constants.eV / scipy.constants.h
     )
